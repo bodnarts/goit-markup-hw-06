@@ -36,9 +36,11 @@ img {
   }
 
 .container {
-  width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-left: auto;
 }
 
 .header-container {
@@ -1493,6 +1495,17 @@ p {
   margin-left: 16px;
 }
 
-@media screen {min-width: 320px;
-  
+@media screen and (min-width: 768px) 
+{
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
