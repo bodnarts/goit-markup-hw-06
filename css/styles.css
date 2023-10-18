@@ -727,7 +727,7 @@ p {
   color: #ffffff;
 }
 
-.fotter-field-form {body {
+.fotter-field-form {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
@@ -763,12 +763,6 @@ img {
       0px 1px 1px rgba(46, 47, 66, 0.16),
       0px 1px 6px rgba(46, 47, 66, 0.08);
   }
-
-.container {
-  width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
 
 .header-container {
   justify-content: center;
@@ -964,12 +958,13 @@ p {
 
 .futures-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .futures-item {
   display: block;
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
 }
 
 .futures-icon-container {
@@ -1478,8 +1473,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto",
-    sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -1495,8 +1489,7 @@ p {
   margin-left: 16px;
 }
 
-@media screen and (min-width: 768px) 
-{
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
@@ -1508,4 +1501,8 @@ p {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+
+.futures-item {
+  width: calc((100% - 72px) / 4);
 }
