@@ -216,6 +216,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  font-weight: 500px;
 }
 
 .futures-section {
@@ -244,16 +245,6 @@ p {
 .futures-item {
   display: block;
   width: 100%;
-}
-
-.futures-icon-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
 }
 
 .futures-title {
@@ -956,30 +947,18 @@ p {
   overflow: hidden;
 }
 
-.futures-list {
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
-}
-
 .futures-item {
   display: block;
-  /* width: calc((100% - 72px) / 4); */
 }
 
 .futures-icon-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
+  display: none;
 }
 
 .futures-title {
   font-weight: 500;
   font-size: 20px;
+  text-align: center;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -1495,6 +1474,10 @@ p {
   }
 }
 
+.futures-item {
+  width: calc((100% - 48px) / 4);
+}
+
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
@@ -1505,4 +1488,14 @@ p {
 
 .futures-item {
   width: calc((100% - 72px) / 4);
+}
+
+.futures-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
