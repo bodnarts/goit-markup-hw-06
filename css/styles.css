@@ -220,7 +220,7 @@ p {
 }
 
 .futures-section {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .visually-hidden {
@@ -930,10 +930,6 @@ p {
   letter-spacing: 0.02em;
 }
 
-.futures-section {
-  padding: 120px 0;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1478,12 +1474,22 @@ p {
   width: calc((100% - 48px) / 4);
 }
 
+.futures-list {
+  display: flex;
+  gap: 72px 24px;
+  flex-wrap: wrap;
+}
+
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+
+.futures-section {
+  padding: 120px 0;
 }
 
 .futures-item {
